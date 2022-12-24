@@ -1,0 +1,43 @@
+print("number of astroger's star:")
+
+num1=int(input())
+
+n=num1
+
+print("enter first binary digit:")
+
+i1= int(input())
+
+print("enter second binary digit:")
+
+i2= int(input())
+
+i3= i1 & i2
+
+if i1==0 and i2==1:
+    print(i3)
+elif i1==1 and i2==1:
+    print(i3)
+elif i1==1 and i2==0:
+    print(i3)
+
+
+
+while (True):
+   
+    
+    if i3==1:
+        print((n)*"*")
+        n=n-1
+        
+    if n==0:
+        break
+   
+    elif i3==0:
+        print((a)*"*")
+        a=a+1
+
+    if a>n:
+        break
+    
+  
