@@ -1,0 +1,20 @@
+print("enter the numbers you want to calculate")
+n1=float(input("enter the first number:"))
+n2=str(input("chose your action: like (add/sub/multiply/divide) >>>"))
+n3=float(input("enter the second number:"))
+
+if n1==45 and n2==("multiply") and n3==3:
+    print(555)
+elif n1==56 and n2==("add") and n3==9:
+    print(77)
+elif n1==56 and n2==("divide") and n3==6:
+    print(5)
+elif n2==("add"):
+    print(n1+n3)
+elif n2==("sub"):
+    print(n1-n3)
+elif n2==("multiply"):
+    print(n1*n3)
+else:
+    n2==("divide")
+    print(n1/n3)
