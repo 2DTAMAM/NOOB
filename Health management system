@@ -1,0 +1,104 @@
+print("Welcome to the Health Management System:")
+print("There is two option\n 1>> for Log information\n 2>> for retrieve information\n choose your option:")
+option=int(input())
+
+
+print("Choose your option:\n 1>>> For diet log\n 2>>>for exrcise log")
+num1=int(input())
+print("Write the name of the customer:")
+name1= str(input())
+
+  
+while option==1:
+     
+    if num1==1 and name1=="harry":
+      f=open("harry_diet.txt", "a")    
+      f.write(str(input()))          
+      print("your log has been added succesfully")
+      f.close()
+
+      
+
+    elif num1==1 and name1=="rohan":
+      f=open("rohan_diet.txt","a")
+      f.write(str(input()))
+      print("your log has been added succesfully")
+      f.close()
+    
+
+    elif num1==1 and name1=="hammad":
+      f=open("hammad_diet.txt","a")
+      f.write(str(input()))
+      print("your log has been added succesfully")
+      f.close()
+    
+
+    elif num1==2 and name1=="harry":
+     f=open("harry_exercise.txt","a")
+     f.write(str(input()))
+     print("your log has been added succesfully")
+     f.close()
+    
+
+    elif num1==2 and name1=="rohan":
+     f=open("rohan_exercise.txt","a")
+     f.write(str(input()))
+     print("your log has been added succesfully")
+     f.close()
+     
+    
+    elif num1==2 and name1=="hammad":
+     f=open("hammad_exercise.txt","a")
+     f.write(str(input()))
+     print("your log has been added succesfully")
+     f.close()
+
+    else:
+      print("no match found")
+      break
+     
+
+while option==2:
+
+    if num1==1 and name1=="harry":
+      f=open("harry_diet.txt")
+      read= f.read()
+      print(read)
+      break
+    
+
+    elif num1==1 and name1=="rohan":
+      f=open("rohan_diet.txt")
+      read= f.read()
+      print(read)
+      break
+    
+
+    elif num1==1 and name1=="hammad":
+      f=open("hammad_diet.txt")
+      read= f.read()
+      print(read)
+      break
+
+    elif num1==2 and name1=="harry":
+     f=open("harry_exercise.txt")
+     read= f.read()
+     print(read)
+     break
+
+    elif num1==2 and name1=="rohan":
+     f=open("rohan_exercise.txt")
+     read= f.read()
+     print(read)
+     break
+
+    elif num1==2 and name1=="hammad":
+     f=open("hammad_exercise.txt")
+     read= f.read()
+     print(read)
+     break
+
+    else:
+      print("no match found")
+      break
+    
