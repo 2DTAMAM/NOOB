@@ -1,12 +1,15 @@
+
 print("Welcome to the rock, papar and scissor game. The game contains 10 rounds. Whoever wins the most, win the game. Start...\n")
 print("Round 01: Enter your choice like: rock, paper or scissor\n")
 
 
-
 i=0
+x=0
+y=0
 
 while(True):
      
+   
      
      if i==10:
       print("the game is over")
@@ -27,7 +30,7 @@ while(True):
       b="round %s ends. Play again:" %i
       print(a)
       print(b)
-      
+      x=x+1
      
      
 
@@ -38,7 +41,7 @@ while(True):
       b="round %s ends. Play again:" %i
       print(a)
       print(b)
-      
+      y=y+1
      
 
      elif choice1=="rock" and fromcom=="rock":
@@ -46,6 +49,7 @@ while(True):
       i=i+1 
       b= "round %s ends. Play again:" %i
       print(b)
+      
       
      
      elif choice1=="paper" and fromcom=="scissor":
@@ -55,16 +59,16 @@ while(True):
       b="round %s ends. Play again:" %i
       print(a)
       print(b)
-      
+      y=y+1
      
      elif choice1=="paper" and fromcom=="rock":
       print("this round's result is : paper") 
       i=i+1
-      a="computer has just won. you lost the round %s" %i
+      a="you have won %s time" %i
       b="round %s ends. Play again:" %i
       print(a)
       print(b)
-      
+      x=x+1
       
      elif choice1=="paper" and fromcom=="paper":
       print("this round's result is : draw")
@@ -80,7 +84,7 @@ while(True):
       b="round %s ends. Play again:" %i
       print(a)
       print(b)
-      
+      x=x+1
      
      elif choice1=="scissor" and fromcom=="scissor":
       print("this round's result is : draw")
@@ -97,6 +101,24 @@ while(True):
       b="round %s ends. Play again:" %i
       print(a)
       print(b)
+      y=y+1
+      
+      
+      
       
 
       continue
+
+      
+print(x)
+print(y) 
+
+if x>y:
+ print("You have won %s rounds. You have won the match" %x)
+
+elif x==y:
+ print("you have drawn the match")
+
+else: 
+  
+ print("You have lost the match. Computer have won total %s rounds" %y)    
