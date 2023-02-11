@@ -1,0 +1,102 @@
+print("Welcome to the rock, papar and scissor game. The game contains 10 rounds. Whoever wins the most, win the game. Start...\n")
+print("Round 01: Enter your choice like: rock, paper or scissor\n")
+
+
+
+i=0
+
+while(True):
+     
+     
+     if i==10:
+      print("the game is over")
+      break
+            
+     
+     choice1=str(input())
+
+     import random
+     choice2=["rock", "paper", "scissor"]
+     fromcom= random.choice(choice2)
+     print(fromcom)
+
+     if choice1=="rock" and fromcom=="scissor":
+      print("this round's result is: rock")
+      i=i+1
+      a="you have won %s time" %i
+      b="round %s ends. Play again:" %i
+      print(a)
+      print(b)
+      
+     
+     
+
+     elif choice1=="rock" and fromcom=="paper":
+      print("this round's result is : paper")
+      i=i+1
+      a="computer has just won. you lost the round %s" %i
+      b="round %s ends. Play again:" %i
+      print(a)
+      print(b)
+      
+     
+
+     elif choice1=="rock" and fromcom=="rock":
+      print("this round's result is : draw")
+      i=i+1 
+      b= "round %s ends. Play again:" %i
+      print(b)
+      
+     
+     elif choice1=="paper" and fromcom=="scissor":
+      print("this round's result is : scissor")
+      i=i+1
+      a="computer has just won. you lost the round %s" %i
+      b="round %s ends. Play again:" %i
+      print(a)
+      print(b)
+      
+     
+     elif choice1=="paper" and fromcom=="rock":
+      print("this round's result is : paper") 
+      i=i+1
+      a="computer has just won. you lost the round %s" %i
+      b="round %s ends. Play again:" %i
+      print(a)
+      print(b)
+      
+      
+     elif choice1=="paper" and fromcom=="paper":
+      print("this round's result is : draw")
+      i=i+1
+      b= "round %s ends. Play again:" %i
+      print(b)
+      
+
+     elif choice1=="scissor" and fromcom=="paper":
+      print("this round's result is :scissor") 
+      i=i+1
+      a="you have won %s time" %i
+      b="round %s ends. Play again:" %i
+      print(a)
+      print(b)
+      
+     
+     elif choice1=="scissor" and fromcom=="scissor":
+      print("this round's result is : draw")
+      i=i+1
+      b= "round %s ends. Play again:" %i
+      print(b)
+      
+   
+    
+     elif choice1=="scissor" and fromcom=="rock":
+      print("this round's result is : rock") 
+      i=i+1
+      a="computer has just won. you lost the round %s" %i
+      b="round %s ends. Play again:" %i
+      print(a)
+      print(b)
+      
+
+      continue
