@@ -26,11 +26,11 @@ while(True):
      if choice1=="rock" and fromcom=="scissor":
       print("this round's result is: rock")
       i=i+1
-      a="you have won %s time" %i
       b="round %s ends. Play again:" %i
-      print(a)
       print(b)
       x=x+1
+      a="you have won %s time" %x
+      print(a)
      
      
 
@@ -64,11 +64,12 @@ while(True):
      elif choice1=="paper" and fromcom=="rock":
       print("this round's result is : paper") 
       i=i+1
-      a="you have won %s time" %i
       b="round %s ends. Play again:" %i
-      print(a)
       print(b)
       x=x+1
+      a="you have won %s time" %x
+      print(a)
+     
       
      elif choice1=="paper" and fromcom=="paper":
       print("this round's result is : draw")
@@ -80,11 +81,11 @@ while(True):
      elif choice1=="scissor" and fromcom=="paper":
       print("this round's result is :scissor") 
       i=i+1
-      a="you have won %s time" %i
       b="round %s ends. Play again:" %i
-      print(a)
       print(b)
       x=x+1
+      a="you have won %s time" %x
+      print(a)
      
      elif choice1=="scissor" and fromcom=="scissor":
       print("this round's result is : draw")
@@ -122,3 +123,4 @@ elif x==y:
 else: 
   
  print("You have lost the match. Computer have won total %s rounds" %y)    
+      
